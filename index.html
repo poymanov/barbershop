@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
+  <body class="index-body">
+    <header class="main-header">
       <div class="wrapper clearfix">
         <ul class="main-menu-list">
           <li class="main-menu-item">
@@ -44,11 +46,8 @@
         <div class="features">
           <ul class="features-list">
             <li class="features-item">
-              <div class="feature-header">
-                Быстро
-              </div>
-              <div class="feature-text">
-                Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
+              <div class="feature-header">Быстро</div>
+              <div class="feature-text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
                 счастливый обладатель стрижки-минутки!
               </div>
             </li>
@@ -112,13 +111,13 @@
                 </li>
               </ul>
               <div class="index-gallery-controls">
-                <button class="btn">Назад</button>
-                <button class="btn">Вперед</button>
+                <button class="btn btn-inline">Назад</button>
+                <button class="btn btn-inline">Вперед</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="index-content clearfix">
+        <div class="index-content index-content-last clearfix">
           <div class="index-column index-column-left">
             <div class="index-column-header">
               Контактная информация
@@ -128,42 +127,45 @@
               <p>Адрес: Г. Санкт-петербург, Б. Конюшенная, Д. 19/8</p>
               <p>Телефон: +7 (495) 666-02-66</p>
             </div>
-            <div class="index-column-info">
+            <div class="index-column-info index-column-info-mb">
               <p>Время Работы:</p>
               <p>Пн — Пт: С 10:00 До 22:00</p>
               <p>Сб — Вс: С 10:00 До 19:00</p>
             </div>
             <div class="index-column-buttons">
-              <a href="#" class="btn">Как проехать</a>
-              <a href="#" class="btn">Обратная связь</a>
+              <a href="#" class="btn btn-inline">Как проехать</a>
+              <a href="#" class="btn btn-inline">Обратная связь</a>
             </div>
           </div>
           <div class="index-column index-column-right">
             <div class="index-column-header">
               Записаться
             </div>
-            <p>Укажите желаемую дату и время и
-            мы свяжемся с вами для подтверждения брони</p>
+            <div class="index-column-reg-info">
+              <p>Укажите желаемую дату и время и
+              мы свяжемся с вами для подтверждения брони</p>
+            </div>
             <form action="/" class="index-column-form">
               <input type="text" placeholder="Дата">
               <input type="text" placeholder="Время">
               <input type="text" placeholder="Ваше имя">
               <input type="text" placeholder="Телефон">
+              <input type="submit" value="Отправить" class="btn btn-fullwidth">
             </form>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="wrapper clearfix">
         <div class="footer-block footer-contacts">
-          <p>Барбершоп «Бородинский»</p>
+          <div class="footer-block-header">Барбершоп «Бородинский»</div>
           <p>Адрес: Г. Санкт-петербург, Ул. Б. Конюшенная, Д. 19/8</p>
-          <p>Как нас найти?</p>
+          <p><a href="#">Как нас найти?</a></p>
           <p>Телефон: +7 (495) 666-02-66</p>
         </div>
         <div class="footer-block footer-socials">
-          <p>Давайте дружить!</p>
+          <div class="footer-block-header">Давайте дружить!</div>
           <ul class="socials-list">
             <li class="socials-item">
               <a href="#" class="socials-link socials-link-vk">vk</a>
@@ -177,8 +179,8 @@
           </ul>
         </div>
         <div class="footer-block footer-developer">
-          <p>Разработано:</p>
-          <a href="#">htmlacademy.ru</a>
+          <div class="footer-block-header">Разработано:</div>
+          <a class="btn" href="#">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
