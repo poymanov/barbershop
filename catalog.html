@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-content">
     <header class="main-header">
       <div class="wrapper clearfix">
         <div class="header-logo">
@@ -41,8 +41,8 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="wrapper">
+    <main class="main-catalog">
+      <div class="wrapper wrapper-catalog">
         <div class="page-header">
           <h1 class="page-title">Средства для ухода</h1>
           <ul class="breadcrumbs-list">
@@ -61,48 +61,48 @@
             <div class="filters">
               <form action="">
                 <div class="filter-group">
-                  <h2 class="filter-header">Производители</h2>
-                  <label for="producer1">
-                    <input id="producer1" name="producer[]" type="checkbox">
-                    Baxter of California
-                  </label>
-                  <label for="producer2">
+                  <h2 class="filter-header">Производители:</h2>
+                  <div class="form-element">
+                    <input id="producer1" name="producer[]" type="checkbox" checked>
+                    <label for="producer1">Baxter of California</label>
+                  </div>
+                  <div class="form-element">
                     <input id="producer2" name="producer[]" type="checkbox">
-                    Mr Natty
-                  </label>
-                  <label for="producer3">
-                    <input id="producer3" name="producer[]" type="checkbox">
-                    Suavecito
-                  </label>
-                  <label for="producer4">
+                    <label for="producer2">Mr Natty</label>
+                  </div>
+                  <div class="form-element">
+                    <input id="producer3" name="producer[]" type="checkbox" checked>
+                    <label for="producer3">Suavecito</label>
+                  </div>
+                  <div class="form-element">
                     <input id="producer4" name="producer[]" type="checkbox">
-                    Malin+Goetz
-                  </label>
-                  <label for="producer5">
+                    <label for="producer4">Malin+Goetz</label>
+                  </div>
+                  <div class="form-element">
                     <input id="producer5" name="producer[]" type="checkbox">
-                    Murray's
-                  </label>
-                  <label for="producer6">
-                    <input id="producer6" name="producer[]" type="checkbox">
-                    American Crew
-                  </label>
+                    <label for="producer5">Murray's</label>
+                  </div>
+                  <div class="form-element">
+                    <input id="producer6" name="producer[]" type="checkbox" checked>
+                    <label for="producer6">American Crew</label>
+                  </div>
                 </div>
                 <div class="filter-group">
-                  <h2 class="filter-header">Группы товаров</h2>
-                  <label for="category1">
+                  <h2 class="filter-header">Группы товаров:</h2>
+                  <div class="form-element">
                     <input id="category1" name="category[]" type="radio">
-                    Бритвенные принадлежности
-                  </label>
-                  <label for="category2">
-                    <input id="category2" name="category[]" type="radio">
-                    Средства для ухода
-                  </label>
-                  <label for="category3">
+                    <label for="category1">Бритвенные принадлежности</label>
+                  </div>
+                  <div class="form-element">
+                    <input id="category2" name="category[]" type="radio" checked>
+                    <label for="category2">Средства для ухода</label>
+                  </div>
+                  <div class="form-element">
                     <input id="category3" name="category[]" type="radio">
-                    Акссесуары
-                  </label>
+                    <label for="category3">Акссесуары</label>
+                  </div>
                 </div>
-                <input class="btn" type="submit" value="Показать">
+                <input class="btn btn-filter" type="submit" value="Показать">
               </form>
             </div>
           </div>
@@ -115,12 +115,14 @@
                     <img src="img/product-01.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Набор для путешествий "Buxter of California"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">2 900 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Набор для путешествий<br>«BAXTER OF CALIFORNIA»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">2 900 руб.</div>
+                    <a href="#" class="product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
               <li class="product-item">
@@ -129,12 +131,14 @@
                     <img src="img/product-02.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Увлажняющий кондиционер "Buxter of California"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">750 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">750 руб.</div>
+                    <a href="#" class="product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
               <li class="product-item">
@@ -143,12 +147,14 @@
                     <img src="img/product-03.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Гель для волос "Suavecito"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">290 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Гель для волос<br> «SUAVECITO»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">290 руб.</div>
+                    <a href="#" class="product-add product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
               <li class="product-item">
@@ -157,12 +163,14 @@
                     <img src="img/product-04.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Глина для укладки волос "American Crew"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">500 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Глина для укладки волос «AMERICAN CREW»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">500 руб.</div>
+                    <a href="#" class="product-add product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
               <li class="product-item">
@@ -171,12 +179,14 @@
                     <img src="img/product-05.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Гель для волос "American Crew"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">300 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Гель для волос<br>«AMERICAN CREW»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">300 руб.</div>
+                    <a href="#" class="product-add product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
               <li class="product-item">
@@ -185,12 +195,14 @@
                     <img src="img/product-06.jpg" alt="">
                   </a>
                 </div>
-                <div class="product-title">
-                  <a href="#">Набор для бритья "Baxter of California"</a>
-                </div>
-                <div class="product-buy">
-                  <div class="product-price">3 900 руб.</div>
-                  <a href="#" class="product-add">Купить</a>
+                <div class="product-content">
+                  <div class="product-title">
+                    <a href="#">Набор для бритья<br>«BAXTER OF CALIFORNIA»</a>
+                  </div>
+                  <div class="product-buy clearfix">
+                    <div class="product-price">3 900 руб.</div>
+                    <a href="#" class="product-add product-add btn btn-inline">Купить</a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -199,7 +211,9 @@
               <li class="pagination-item">
                 <a href="#" class="pagination-link">1</a>
               </li>
-              <li class="pagination-item pagination-item-active">2</li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-active">2</a>
+              </li>
               <li class="pagination-item">
                 <a href="#" class="pagination-link">3</a>
               </li>
@@ -211,16 +225,16 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="wrapper clearfix">
         <div class="footer-block footer-contacts">
-          <p>Барбершоп «Бородинский»</p>
+          <div class="footer-block-header">Барбершоп «Бородинский»</div>
           <p>Адрес: Г. Санкт-петербург, Ул. Б. Конюшенная, Д. 19/8</p>
-          <p>Как нас найти?</p>
+          <p><a href="#">Как нас найти?</a></p>
           <p>Телефон: +7 (495) 666-02-66</p>
         </div>
         <div class="footer-block footer-socials">
-          <p>Давайте дружить!</p>
+          <div class="footer-block-header">Давайте дружить!</div>
           <ul class="socials-list">
             <li class="socials-item">
               <a href="#" class="socials-link socials-link-vk">vk</a>
@@ -234,8 +248,8 @@
           </ul>
         </div>
         <div class="footer-block footer-developer">
-          <p>Разработано:</p>
-          <a href="#">htmlacademy.ru</a>
+          <div class="footer-block-header">Разработано:</div>
+          <a class="btn" href="#">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
